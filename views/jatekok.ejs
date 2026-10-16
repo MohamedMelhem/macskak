@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Játékok</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Játékok</h1>
+    <p><a href="/">Főoldal</a> | <a href="/macskak">Macskák</a></p>
+    <ul>
+        <% jatekok.forEach(jatek => { %>
+            <li><%= jatek.id %>. <%= jatek.nev %></li>
+        <% }) %>
+    </ul>
+</body>
+</html>
